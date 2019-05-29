@@ -3,7 +3,7 @@ version: "3.6"
 services:
   pinpoint-hbase:
     build:
-      context: ./pinpoint-hbase/
+      context: ./../pinpoint-hbase/
       dockerfile: Dockerfile
       args:
         - PINPOINT_VERSION=${PINPOINT_VERSION}
@@ -37,7 +37,7 @@ services:
 
   pinpoint-mysql:
     build:
-      context: ./pinpoint-mysql/
+      context: ./../pinpoint-mysql/
       dockerfile: Dockerfile
       args:
         - PINPOINT_VERSION=${PINPOINT_VERSION}
@@ -61,7 +61,7 @@ services:
 
   pinpoint-web:
     build:
-      context: ./pinpoint-web/
+      context: ./../pinpoint-web/
       dockerfile: Dockerfile
       args:
         - PINPOINT_VERSION=${PINPOINT_VERSION}
@@ -113,7 +113,7 @@ services:
 
   pinpoint-collector:
     build:
-      context: ./pinpoint-collector/
+      context: ./../pinpoint-collector/
       dockerfile: Dockerfile
       args:
         - PINPOINT_VERSION=${PINPOINT_VERSION}
